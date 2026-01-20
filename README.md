@@ -5,7 +5,7 @@
 [![MongoDB](https://img.shields.io/badge/MongoDB-8.x-brightgreen)](https://www.mongodb.com/)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Um projeto simples de login e register, com autenticação com JWT, criptografia, uso correto de métodos http, testes unitários e validações. 
+Um projeto simples de login e register, com autenticação com JWT + cookie, criptografia, uso correto de métodos http, testes unitários e validações. 
 Desenvolvida com **Node.js + Express + Mongoose + MongoDB** e testada com **Insomnia** e **jest**.
 
 - `POST   /app/signUp` → Registro  
@@ -21,6 +21,9 @@ Desenvolvida com **Node.js + Express + Mongoose + MongoDB** e testada com **Inso
 | MongoDB            | 6.x.x   | Banco de dados               |
 | jsonwebtoken       | 9.0.2   | JWT                          |
 | jest               | 30.x.x  | Testes unitários             |
+| bcryptjs           | 3.x.x   | Hash de senhas               |
+| joi                | 7.x.x   | Validação de entrada         |
+| cookie-parser      | 1.x.x   | Leitura de cookies           |
 
 ## ⚙️ Instalação
 
