@@ -18,7 +18,7 @@ const { registerUser, loginUser } = await import("../src/services/userService.js
 // Função que será testada
 const { signIn, signUp } = await import("../src/controllers/userController.js");
 
-describe('User Controller signIn', () => {
+describe('User Controller signUp', () => {
     beforeEach(() => {
         jest.clearAllMocks()
     });
@@ -72,7 +72,7 @@ describe('User Controller signIn', () => {
     
 });
 
-describe('User Controller signUp', () => {
+describe('User Controller signIn', () => {
     beforeEach(() => {
         jest.clearAllMocks()
     });
