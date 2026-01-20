@@ -8,7 +8,7 @@ export const signUp = async (req, res) => {
         res.status(201).json({ message: 'Usuário registrado com sucesso' });
     } catch (error) {
         if(error.message === 'Email existente') {
-            return res.status(409).json({ error: error.message });
+            return res.status(401).json({ error: error.message });
         }
 
         res.status(500).json({ error: 'Erro ao registrar usuário' });

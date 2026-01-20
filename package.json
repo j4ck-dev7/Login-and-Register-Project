@@ -5,7 +5,7 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
   "repository": {
     "type": "git",
@@ -19,15 +19,16 @@
   "homepage": "https://github.com/j4ck-dev7/Login-and-register-project#readme",
   "dependencies": {
     "@hapi/joi": "^17.1.1",
-    "bcrypt": "^6.0.0",
     "bcryptjs": "^3.0.2",
     "cookie-parser": "^1.4.7",
     "dotenv": "^17.0.0",
     "express": "^5.1.0",
     "joi": "^17.13.3",
     "jsonwebtoken": "^9.0.2",
-    "mongo": "^0.1.0",
     "mongodb": "^6.21.0",
     "mongoose": "^8.16.1"
+  },
+  "devDependencies": {
+    "jest": "^30.2.0"
   }
 }
