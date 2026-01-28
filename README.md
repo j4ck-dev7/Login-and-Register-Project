@@ -65,5 +65,29 @@ SECRET=SuaChaveSuperSecretaAqui!
    }
    ```
 
+## 📋 Testes Unitários
+Os testes unitários foram aplicados nas seguintes camadas e módulos:
+| Módulo                 | Service | Controller | Tipos de Teste                 |
+|------------------------|---------|------------|--------------------------------|  
+| **Usuário (Login)**    | ✅      | ✅         | Sucesso, Erro, Autenticação    |
+| **Usuário (Register)** | ✅      | ✅         | Sucesso, Erro, Validação       |
+
+## 🏗️ Estrutura de Testes
+
+### Camada de Service
+A camada de Service contém a lógica de negócio da aplicação. Os testes irão validar:
+
+- **Casos de Sucesso**: Operações executadas corretamente
+- **Casos de Erro**: Tratamento de exceções e erros esperados
+- **Validações**: Regras de negócio e constraints
+
+### Camada de Controller
+A camada de Controller gerencia as requisições HTTP. Os testes irão validar:
+
+- **Respostas Bem-Sucedidas**: Status 200, 201, etc.
+- **Erros HTTP**: Status 400, 401, 403, 404, 500, etc.
+- **Autenticação e Autorização**: Validação de tokens e permissões
+- **Validação de Entrada**: Dados malformados ou inválidos
+
 ## 📄 Licença
 Este projeto está licenciado sob a MIT License - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
